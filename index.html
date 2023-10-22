@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Zimmerman</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+   (function(){
+      emailjs.init("5o763pJzwx85Dw-XA");
+   })();
+    </script>
+</head>
+<body>
+    <section id="landing-page" onmousemove="moveBackground(event)">
+        <nav>
+            <figure>
+                <img  id ="personal-logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHoAAAB6CAMAAABHh7fWAAAAZlBMVEUAAAD+/v7////39/fz8/PBwcGwsLDs7Ozk5ORtbW2GhoZ8fHza2trW1tb7+/vPz89fX1+pqakoKCh0dHSjo6O7u7ucnJxaWlohISFISEjIyMhnZ2eSkpJRUVE+Pj4UFBQyMjILCwvtal7XAAADz0lEQVRoge2Y646qOhhA8euVFiiVUgQK4vu/5C7qbK2jxrNBfpx0JTOGDHFNL9+lTZJIJBKJRCKRSCQSiUQikTPTWKZCGtKRmlApqK40mek6Qp216ReUx6StBK0ZQjv4BQbgjOmp7WWzpvQwNgPNshz/iHb3+EeMiZL7/eE4v31azVu6jj93XrxQyLIdV9NdOOyPJs+fK39ALO8P/tWmbNfSCmeyYle81foxM2o6hjgfeicOa3hT8nKCf8+3J1tpvkvDPnDeyHC+jvko5o2To0/dWVEzoqldbnYZJ6IaElF85vbRnFk3jtNyddPOUVkS9sEqzz/ELXfec+xuWeqlmSEAVq8dz8II2Tpt6i57MXqA2mGgx5XFPzQEvxo7MGmBDd/xio4jxjBWitKM6IekbY6GuVUyyAOnxulWNuV+HC9LOdGbGvwS85aotRf5KXt7W/C5OiJDudxCnPTZ36UGkBgKzWATcaJvewx2KgOFgH+jD/lFhe6GzEUFRsHKSeQ5J727DRlpKjrBebmJWd1NNuYcqxqrb2WRgJLfhRRkgCtRbDLZib6rXZBxQI0sNompCt9lT2AWG5/hVuu+3mHv0zZgAuM30uYzaFAwgNMm3WTESZMH1QIQp1ZvYh5xMGTILKeo38K8D8bskydFqzW77xnCMSPjW/J6kz2mww1WWJICXe/89pqWh2Zs23T1zu8pZdgEApSjXqG3/4D9g5nJKdusHQnNY0q/1HQ+4FAYzrwim+yvJDFB1vYbTEK3idibgzxCDxS22WCheQeuzEiwzKc+rWRVpWk/9Gk7plJK/+Dxn3JJwhnDGgm54+r8h+Pgv9zmdcf/HoF8n4jw5bKq2GFke1ubBbdVXWDeaQt8TE6jINnvU9flqcCEdU0/jueNuP9nswtTmK4BhFPd0zPu+eZEyHT4d90dIjR3vY+yVydrP9zctL4rndphefNQwUNj8OYKB7QSSu0KroZGiGmZuPxlen+TcVlquny6289viq7/VlHwnOnkeFia6LqP7uTOv8/XNgwYyzingriFpxDyRgxXH5uvZgvOlJyPQRiINX2bLBQf6EvzeT0NFIDzPqlMgbq8xpBruV+llLVPJ/uastxgyY4IU/XOKMW5qt2KVezpbAPGNM29miHoKkdVp+0wrl0768egmjcUDM2wN4AZz6zQblrZeWUKIxhw0eG5OlDSt+Ph+NUuIZxxpJ3rLKltX37/9H7N3edCpBSgfKN+aKY6B64iPsgwXZqR/yM+mSmE1TanyJCJMCKn7aY5YKu7gkgkEolEIpFIJBKJ/O/4Az7HMu1nmqKoAAAAAElFTkSuQmCC" alt="">
+            </figure>
+            <ul class="nav__link--list">
+                <li class="nav__link" onclick="toggleModal()">
+                    <a href="#" class ="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect-black">About</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#projects" class ="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect-black">Projects</a>
+                </li>
+                <li class="nav__link" onclick="toggleModal()">
+                    <a href="#" class ="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect-black">Contact</a>
+                </li>
+                <li class="nav__link click" onclick="toggleContrast()">
+                    <a href="#" class ="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect-black">
+                    <i class = "fas fa-adjust"></i></a>
+                </li>
+            </ul>
+
+        </nav>
+        <header class="header">
+            <div class="header_content">
+                <h1 class="title">Hey</h1>
+                <h1 class="title title--secondary">I'm Matt.</h1>
+                <p class="header__para">
+                    I'm a <span class="orange">Fronted Developer </span> with a strong passsion for building web applications
+                    with great user experiences. 
+                    <br>
+                    Here's a bit more <span class="orange click" onclick="toggleModal()">about me.</span>
+                </p>
+                <div class="social__list">
+                    <!-- add links here -->
+                    <a href=""class="social__link click">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                
+                    <a href=""class="social__link click">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href=""class="social__link click">
+                        <i class="fas fa-file-pdf"></i>
+                    </a>   
+            </div>
+        </header>
+        <a href="#">
+            <button class="mail__btn click" onclick="toggleModal()">
+                <i class="fas fa-envelope"></i>
+            </button>
+        </a>
+        <a href="#projects" class ="scroll">
+            <div class="scroll__icon click"></div>
+        </a>
+        <div class="modal">
+            <div class="modal__half modal__about">
+                <h3 class = "modal__title modal__title--about">Here's a bit about me.</h3>                
+                <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
+                <p class="modal__para">
+                    I'm a 21 year old software developer with a strong passion for making responsive
+                    web applications,
+                    <br>
+                    My goal is to make web applications that make a positive impact.
+                </p>
+                <div class="modal__languages">
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+                        <span class="language__name">HTML</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="">
+                        <span class="language__name">CSS</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="">
+                        <span class="language__name">JavaScript</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="">
+                        <span class="language__name">React</span>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="modal__half modal__contact">
+                <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+                <h3 class="modal__title modal__title--contact">
+                    Let's have a chat!
+                </h3>
+                <h3 class="modal__sub-title modal__sub-title--contact">
+                    I'm currently open to new opportunities.
+                </h3>
+                <form id="contact__form" onsubmit="contact(event)">
+                    <div class="form__item">
+                        <label class="form__item--label">Name</label>
+                        <input type="text" name="user_name" class="input" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">E-mail</label>
+                        <input type="email" name="user_email" class="input" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Message</label>
+                        <textarea type="text" name="Message" class="input" ></textarea>
+                    </div>
+                    <button id = "contact__submit" class="form__submit">
+                        Send it my way
+                    </button>
+                </form>
+                <div class="modal__overlay modal__overlay--loading">
+                    <i class="fas fa-spinner"></i>
+                </div>
+                <div class="modal__overlay modal__overlay--success">
+                    Thanks for the message! Looking forward to speaking to you soon.
+                </div>
+            </div>
+            
+        </div>
+        <img src="/Shapes/semi circle.svg" class="shape shape--0">
+        <img src="/Shapes//circle.svg" class="shape shape--1">
+        <img src="/Shapes//squiggly.svg" class="shape shape--2">
+        <img src="/Shapes//circle.svg" class="shape shape--3">
+        <img src="/Shapes//triangle.svg" class="shape shape--4">
+        <img src="/Shapes//circle.svg" class="shape shape--5">
+        <img src="/Shapes//squiggly.svg" class="shape shape--6">
+        <img src="/Shapes//circle.svg" class="shape shape--7">
+        <img src="/Shapes/semi circle.svg" class="shape shape--8">
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">
+                    Here are some of my <span class="orange">projects</span>
+                </h1>
+                <ul class="project__list">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThyEKIq_a7eWEwVEoo1aTBQ6gV1KQ4BI8ojEQgnl0ITQ&s" class ="project__img"alt="">
+                            <div class="project__wrapper--bg">
+
+                            </div>
+                            <div class="project__description">
+                                <h3 class="project__descriptoion--title">
+                                    Project1
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    Html, CSS, JavaScript
+                                </h4>
+                                <p class="project__description--para">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                    Eum ab pariatur aperiam at dignissimos. Asperiores reprehenderit explicabo dignissimos animi repudiandae. Porro vitae quaerat voluptates reiciendis tempore aut necessitatibus odit illo.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThyEKIq_a7eWEwVEoo1aTBQ6gV1KQ4BI8ojEQgnl0ITQ&s" class ="project__img"alt="">
+                            <div class="project__wrapper--bg">
+
+                            </div>
+                            <div class="project__description">
+                                <h3 class="project__descriptoion--title">
+                                    Project1
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    Html, CSS, JavaScript
+                                </h4>
+                                <p class="project__description--para">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                    Eum ab pariatur aperiam at dignissimos. Asperiores reprehenderit explicabo dignissimos animi repudiandae. Porro vitae quaerat voluptates reiciendis tempore aut necessitatibus odit illo.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThyEKIq_a7eWEwVEoo1aTBQ6gV1KQ4BI8ojEQgnl0ITQ&s" class ="project__img"alt="">
+                            <div class="project__wrapper--bg">
+
+                            </div>
+                            <div class="project__description">
+                                <h3 class="project__descriptoion--title">
+                                    Project1
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    Html, CSS, JavaScript
+                                </h4>
+                                <p class="project__description--para">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                    Eum ab pariatur aperiam at dignissimos. Asperiores reprehenderit explicabo dignissimos animi repudiandae. Porro vitae quaerat voluptates reiciendis tempore aut necessitatibus odit illo.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row footer__row">
+            <figure>
+                <img class ="footer__logo--img"src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHoAAAB6CAMAAABHh7fWAAAAZlBMVEUAAAD+/v7////39/fz8/PBwcGwsLDs7Ozk5ORtbW2GhoZ8fHza2trW1tb7+/vPz89fX1+pqakoKCh0dHSjo6O7u7ucnJxaWlohISFISEjIyMhnZ2eSkpJRUVE+Pj4UFBQyMjILCwvtal7XAAADz0lEQVRoge2Y646qOhhA8euVFiiVUgQK4vu/5C7qbK2jxrNBfpx0JTOGDHFNL9+lTZJIJBKJRCKRSCQSiUQikTPTWKZCGtKRmlApqK40mek6Qp216ReUx6StBK0ZQjv4BQbgjOmp7WWzpvQwNgPNshz/iHb3+EeMiZL7/eE4v31azVu6jj93XrxQyLIdV9NdOOyPJs+fK39ALO8P/tWmbNfSCmeyYle81foxM2o6hjgfeicOa3hT8nKCf8+3J1tpvkvDPnDeyHC+jvko5o2To0/dWVEzoqldbnYZJ6IaElF85vbRnFk3jtNyddPOUVkS9sEqzz/ELXfec+xuWeqlmSEAVq8dz8II2Tpt6i57MXqA2mGgx5XFPzQEvxo7MGmBDd/xio4jxjBWitKM6IekbY6GuVUyyAOnxulWNuV+HC9LOdGbGvwS85aotRf5KXt7W/C5OiJDudxCnPTZ36UGkBgKzWATcaJvewx2KgOFgH+jD/lFhe6GzEUFRsHKSeQ5J727DRlpKjrBebmJWd1NNuYcqxqrb2WRgJLfhRRkgCtRbDLZib6rXZBxQI0sNompCt9lT2AWG5/hVuu+3mHv0zZgAuM30uYzaFAwgNMm3WTESZMH1QIQp1ZvYh5xMGTILKeo38K8D8bskydFqzW77xnCMSPjW/J6kz2mww1WWJICXe/89pqWh2Zs23T1zu8pZdgEApSjXqG3/4D9g5nJKdusHQnNY0q/1HQ+4FAYzrwim+yvJDFB1vYbTEK3idibgzxCDxS22WCheQeuzEiwzKc+rWRVpWk/9Gk7plJK/+Dxn3JJwhnDGgm54+r8h+Pgv9zmdcf/HoF8n4jw5bKq2GFke1ubBbdVXWDeaQt8TE6jINnvU9flqcCEdU0/jueNuP9nswtTmK4BhFPd0zPu+eZEyHT4d90dIjR3vY+yVydrP9zctL4rndphefNQwUNj8OYKB7QSSu0KroZGiGmZuPxlen+TcVlquny6289viq7/VlHwnOnkeFia6LqP7uTOv8/XNgwYyzingriFpxDyRgxXH5uvZgvOlJyPQRiINX2bLBQf6EvzeT0NFIDzPqlMgbq8xpBruV+llLVPJ/uastxgyY4IU/XOKMW5qt2KVezpbAPGNM29miHoKkdVp+0wrl0768egmjcUDM2wN4AZz6zQblrZeWUKIxhw0eG5OlDSt+Ph+NUuIZxxpJ3rLKltX37/9H7N3edCpBSgfKN+aKY6B64iPsgwXZqR/yM+mSmE1TanyJCJMCKn7aY5YKu7gkgkEolEIpFIJBKJ/O/4Az7HMu1nmqKoAAAAAElFTkSuQmCC" alt="">
+            </figure>
+            <div class="footer__social--list">
+                <a href="#" target="_blank" class="footer__social--link
+                link__hover-effect
+                link__hover-effect-white">
+                Github
+            </a>
+                <a href="#" target="_blank" class="footer__social--link
+                link__hover-effect
+                link__hover-effect-white">
+                LinkedIn
+            </a>
+                <a href="#" onclick="toggleModal()" class="footer__social--link
+                link__hover-effect
+                link__hover-effect-white">
+                Contact
+            </a>
+                <!-- put resume here  -->
+                <a href="#" target="_blank" class="footer__social--link
+                link__hover-effect
+                link__hover-effect-white">
+                Resume
+            </a>
+            </div>
+            <div class="footer__copyright">
+                Copyright © 2023 Matthew Zimmerman
+            </div>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
