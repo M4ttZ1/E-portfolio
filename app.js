@@ -1,6 +1,6 @@
 let isModalOpen = false
 let contrastToggle = false;
-const scaleFactor = 1/20;
+const scaleFactor = 1/16;
 
 function moveBackground(event){
     const shapes = document.querySelectorAll(".shape")
