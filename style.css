@@ -50,12 +50,14 @@ section{
     margin-bottom: 12px;
     text-align: left;
     line-height: 1;
+    
 }
 
 .title--secondary,
 .orange {
     color: #f06449 !important; 
     font-weight: bold;
+    
 }
 
 .click:hover{
